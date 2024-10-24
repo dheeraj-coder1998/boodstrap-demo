@@ -1,0 +1,127 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+ height: 100%;
+ width: 100%;
+  box-sizing: border-box;
+
+}
+
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+.bg-warning-custom{
+  background-color:#fb5a6b;
+  border-radius: 1%;
+  border-bottom: 1px solid black;
+ 
+ 
+}
+
+
+.nav-link:hover  {
+  font-size: 1.2em !important; 
+  color: #eeff33 !important; 
+  text-shadow: 2px 2px ;
+  text-shadow: 2px 2px 5px red;
+
+}
+
+.nav-link{
+  color: rgb(2, 91, 4);
+  font-size: large;
+  font-family:cursive;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px red;
+  
+
+  
+}
+
+#features{
+  background-color: #eeff33;
+ 
+}
+
+.carousel-control-prev-icon ,.carousel-control-next-icon {
+  background-color: red;
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+#animated-text {
+  font-size: 3em;
+  color: #ff5733;
+  animation: fadeInOut 1s infinite;
+}
+
+#animated-text:hover {
+  animation: none;
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+}
+
+#image-hover {
+  transition: transform 0.3s ease;
+}
+
+
+
+
+#image-hover:hover {
+  transform: scale(1.1); /* Slightly scales up the image */
+}
+
+@media (max-width: 568px) {
+  #myDIV #image-hover{
+  justify-content: center;
+  align-items: center;
+  margin:30px;
+}
+
+#meet-text{
+  margin-bottom: 100px;
+}
+
+
+}
+
+
+ 
+ 
+
+ 
+
+
